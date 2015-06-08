@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sample App</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<header>
+	<center>
+	<%= link_to "Home", hello_world_path %> • 
+	<%= link_to "Welcome", welcome_path %>
+	<p></p>
+	</center>
+</header>
+
+
+<%= yield %>
+
+</body>
+</html>

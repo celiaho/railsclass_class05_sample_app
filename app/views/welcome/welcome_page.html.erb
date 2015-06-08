@@ -1,0 +1,28 @@
+<!-- Hello, this is the welcome page. Welcome!
+<%= link_to "Go to Hello World", hello_world_path %>
+
+<br>
+<br> -->
+
+
+<div class="header emphasis">This is the <span class="red">Batman</span> welcome page.</div>
+
+<div class="topic">
+	<!-- <% @villains.each do |key, val| %>
+		<h3><%= key %></h3>
+		<ul>
+			<% val[:strengths].each do |attribute| %>
+			<li><%= attribute %></li>
+			<% end %>
+		</ul>
+	<% end %> -->
+
+	<% @villains.each do |villain_name, attribute| %>
+		<h3><%= link_to "#{villain_name}", "villains/#{villain_name}" %></h3>
+	<% end %>
+</div>
+
+
+
+<!-- <%= link_to "Home", hello_world_path %> • 
+<%= link_to "name oflink", "villains/villains[:key]" %> -->
