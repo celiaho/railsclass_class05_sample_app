@@ -17,7 +17,7 @@ class WelcomeController < ApplicationController
 	end
 
 	def detail
-		# (1) Hash is defined for this method
+		# (1) Hash is defined for this method.
 		@villains = {
 			"joker" => {
 				strengths: ["studly", "purple pants", "nice teeth"]
@@ -27,7 +27,7 @@ class WelcomeController < ApplicationController
 			}
 		}
 
-		# (2) 
+		# (2) Logic behind method is defined here.
 		# params {name: "whatever's in the url"}
 		if @villains.has_key?( params[:key] )
 			@villain_details = @villains[params[:key]]
